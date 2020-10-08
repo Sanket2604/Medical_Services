@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2450.081" height="2338.937" viewBox="0 0 2450.081 1138.937">
+  <g id="d2" transform="matrix(-0.951, -0.309, 0.309, -0.951, 1988.587, 2466.039)">
+    <g id="design_" data-name="design !" transform="matrix(0.966, 0.259, -0.259, 0.966, 400.162, 0)">
+      <rect id="Rectangle_28" data-name="Rectangle 28" width="1920" height="1542" transform="translate(0 4.107)" fill="#3243cf"/>
+      <path id="Path_21" data-name="Path 21" d="M0,303.352,416,0H952L901.186,453.526,554,774.9H0" transform="translate(10.815 768.805)" fill="#00109f"/>
+      <path id="Path_23" data-name="Path 23" d="M959.188,303.577,540.386,0H0L51.23,454.214,401.257,776.075H959.79" transform="translate(960.815 768.805)" fill="#2e008b"/>
+      <path id="Path_24" data-name="Path 24" d="M952,469.356,536,771.3H0L50.814,319.88,398,0H952" transform="translate(960.815 0)" fill="#7878e2"/>
+      <path id="Path_22" data-name="Path 22" d="M0,469.357,416,771.3H952L901.186,319.88,554,0H0" transform="translate(10.815 0)" fill="#5000c9"/>
+    </g>
+    <path id="Polygon_4" data-name="Polygon 4" d="M97,0l97,166H0Z" transform="translate(1300.738 1526.156) rotate(160)" fill="#fff"/>
+    <path id="Polygon_13" data-name="Polygon 13" d="M100,0,200,232H0Z" transform="matrix(0.951, 0.309, -0.309, 0.951, 1287.473, 1519.077)" fill="#fff"/>
+    <path id="Polygon_14" data-name="Polygon 14" d="M100,0,200,232H0Z" transform="matrix(0.951, 0.309, -0.309, 0.951, 479.543, 1220.109)" fill="#fff"/>
+    <path id="Polygon_7" data-name="Polygon 7" d="M97,0l97,166H0Z" transform="translate(1640.738 1526.156) rotate(160)" fill="#fff"/>
+    <path id="Polygon_10" data-name="Polygon 10" d="M97,0l97,166H0Z" transform="translate(996.87 1637.895) rotate(160)" fill="#fff"/>
+    <path id="Polygon_11" data-name="Polygon 11" d="M97,0l97,166H0Z" transform="translate(1824.738 1826.156) rotate(160)" fill="#fff"/>
+    <path id="Polygon_15" data-name="Polygon 15" d="M60,0l60,96H0Z" transform="translate(1879.581 1075.665) rotate(-20)" fill="#fff"/>
+    <path id="Polygon_9" data-name="Polygon 9" d="M97,0l97,166H0Z" transform="translate(1980.738 1526.156) rotate(160)" fill="#fff"/>
+    <path id="Polygon_5" data-name="Polygon 5" d="M97,0l97,166H0Z" transform="translate(1006.939 1286.168) rotate(-20)" fill="#fff"/>
+    <path id="Polygon_12" data-name="Polygon 12" d="M97,0l97,166H0Z" transform="translate(717.939 1172.168) rotate(-20)" fill="#fff"/>
+    <path id="Polygon_6" data-name="Polygon 6" d="M97,0l97,166H0Z" transform="translate(1346.939 1286.168) rotate(-20)" fill="#fff"/>
+    <path id="Polygon_8" data-name="Polygon 8" d="M97,0l97,166H0Z" transform="translate(1686.939 1286.168) rotate(-20)" fill="#fff"/>
+    <path id="Path_25" data-name="Path 25" d="M97,166l228.139-3.012L0,0Z" transform="translate(1054.662 740.519) rotate(-20)" fill="#fff"/>
+  </g>
+</svg>
