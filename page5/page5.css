@@ -340,10 +340,18 @@ nav .collapse ul li a{
 }
 .footer .box_2{
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
 }
-
+.footer .box_2 .box_21{
+    width: 100%;
+}
+.footer .box_2 .box_22{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
 @media only screen and (max-width: 1000px) and (min-width: 710px){
     nav{
         height: 70px;
@@ -545,17 +553,25 @@ nav .collapse ul li a{
     .footer .box_2 .bigheading{
         font-size: 14px;
         font-weight: 500;
-        color: white;
+        white-space: nowrap;
     }
     .footer .box_1 .smallheading,
     .footer .box_2 .smallheading{
         font-size: 12px;
-        color: white;
+        white-space: nowrap;
     }
     .footer .box_2{
         display: flex;
         justify-content: space-around;
         align-items: flex-end;
+    }
+    .footer .box_2 .box_21{
+        width: 100%;
+    }
+    .footer .box_2 .box_22{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 }
 @media only screen and (max-width: 1030px) and (min-width: 1000px){
@@ -646,16 +662,25 @@ nav .collapse ul li a{
     .footer .box_2 .bigheading{
         font-size: 7px;
         font-weight: 500;
-        color: white;
+        white-space: nowrap;
     }
     .footer .box_1 .smallheading,
     .footer .box_2 .smallheading{
         font-size: 6px;
-        color: white;
+        white-space: nowrap;
     }
     .footer .box_2{
         display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 10px;
+    }
+    .footer .box_2 .box_21{
+        width: 100%;
+    }
+    .footer .box_2 .box_22{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 }
