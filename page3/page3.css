@@ -1072,7 +1072,7 @@ nav .collapse ul li a{
         flex-direction: column;
         align-items: center;
         color: #000B56;
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
     .cont2 .form .bigheading{
         font-size: 24px;
@@ -1096,6 +1096,8 @@ nav .collapse ul li a{
     }
     .cont2 .form .form_start .ele .category{
         width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
     }
     .cont2 .form .form_start .ele .inputbox{
         color: #000B56;

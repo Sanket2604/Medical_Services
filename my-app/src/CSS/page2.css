@@ -21,207 +21,6 @@ a, a:hover{
     width: 100%;
     z-index: 5;
 }
-nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #2E008B;
-    padding: 10px 0;
-    z-index: 5;
-    box-shadow: 0px 0.5px 5px #000000;
-    position: fixed;
-    height: 70px;
-}
-nav .brand_items{
-    width: 20%;
-    display: flex;
-    align-items: center;
-}
-nav .brand_items .logo{
-    margin-left: 4vw;
-    background-image: url(images/logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 20px;
-    width: 20px;
-    transform: scale(5);
-    cursor: pointer;
-}
-nav .brand_items .brand{
-    margin-left: 40px;
-    max-width: 100px;
-    line-height: 20px;
-    font-size: 23px;
-    font-weight: 600;
-    cursor: pointer;
-    color: white;
-}
-nav .collapse{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    font-size: 20px;
-}
-nav .collapse ul li a{
-    color: white!important;
-    cursor: pointer;
-    margin-right: 60px;
-}
-.searchtab{
-    background-color: #2E008B;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    border-bottom: 8px solid #5353E0;
-}
-.searchtab .row1{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.searchtab .searchbar{
-    display: flex;
-    align-items: center;
-}
-.searchtab .searchbar .input_area{
-    width: 30vw;
-    border-radius: 10px;
-    margin-right: 20px;
-    padding: 10px;
-    height: 35px;
-}
-.searchtab .searchbar .circle_1{
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    background-color: #3b00b3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 5px black;
-}
-.searchtab .searchbar .circle_2{
-    height: 69%;
-    width: 69%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: #5353E0;
-    font-size: 14px;
-}
-.searchtab .searchbar .circle_1:hover{
-    animation: zoom1 0.2s ease-in-out forwards;
-}
-@keyframes zoom1{
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
-.searchtab .searchbar .circle_1:hover .circle_2{
-    animation: zoom2 0.2s 0.15s ease-in-out forwards;
-}
-@keyframes zoom2{
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
-
-.searchtab .consult{
-    display: flex;
-    align-items: center;
-}
-.searchtab .consultbtn{
-    background-color: #5353E0;
-    padding: 6px 20px;
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 30px;
-    letter-spacing: 1px;
-    transition: 0.5s ease-in-out;
-}
-.searchtab .consultbtn:hover{
-    color: #5353E0;
-    background-color: white;
-    cursor: pointer;
-    animation: bounce 0.25s linear forwards;
-}
-@keyframes bounce{
-    0%{
-        transform: scale(1);
-    }
-    33%{
-        transform: scale(0.9);
-    }
-    67%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(1.05);
-    }
-}
-.searchtab .estimate{
-    padding: 10px 20px;
-    color: white;
-    font-size: 24px;
-    font-weight: 700;
-}
-.mobile_search{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-    margin-top: 0px;
-    height: 0;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-.mobile_search.click{
-    margin-top: 10px;
-    height: auto;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-.mobile_search .input_area{
-    width: 70%;
-    border-radius: 10px;
-    padding: 10px;
-    height: 35px;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
-}
-.mobile_search .input_area.click{
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-}
-.mobile_search .searchbtn{
-    background-color: #5f74ff;
-    padding: 8px 15px;
-    color: white;
-    font-size: 16px;
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
-}
-.mobile_search .searchbtn.click{
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-}
 .main_heading{
     text-align: center;
     color: #2E008B;
@@ -282,7 +81,6 @@ nav .collapse ul li a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 2000px;
     background-color: rgba(202, 202, 202, 0.25);
     margin-bottom: 40px;
 }
@@ -362,19 +160,19 @@ nav .collapse ul li a{
     margin-top: 5px;    
 }
 .card_ .details .ele .img1{
-    background-image: url(images/location.png);
+    background-image: url(../assets/page2/location.png);
 }
 .card_ .details .ele .img2{
-    background-image: url(images/rocket.png);
+    background-image: url(../assets/page2/rocket.png);
 }
 .card_ .details .ele .img3{
-    background-image: url(images/bed.png);
+    background-image: url(../assets/page2/bed.png);
 }
 .card_ .details .ele .img4{
-    background-image: url(images/building.png);
+    background-image: url(../assets/page2/building.png);
 }
 .card_ .details .ele .img5{
-    background-image: url(images/info.png);
+    background-image: url(../assets/page2/info.png);
 }
 .card_ .details .ele .det{
     width: 95%;
@@ -418,9 +216,6 @@ nav .collapse ul li a{
 }
 .pgcounter{
     display: flex;
-    position: absolute;
-    bottom: -80px;
-    right: 5%;
     margin: 10px;
     font-size: 18px;
 }
@@ -463,215 +258,7 @@ nav .collapse ul li a{
 .downdesign2 .bottom{
     position: absolute;
 }
-.footer{
-    margin-top: 240px;
-}
-.footer .box_1{
-    display: flex;
-    justify-content: center;
-}
-.footer .box_1 .box_11{
-    padding: 0 80px 0 0;
-}
-.footer .box_1 .bigheading,
-.footer .box_2 .bigheading{
-    font-size: 18px;
-    font-weight: 700;
-    color: white;
-}
-.footer .box_1 .smallheading,
-.footer .box_2 .smallheading{
-    font-size: 14px;
-    color: white;
-}
-.footer .box_2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 10px;
-}
-.footer .box_2 .box_21{
-    width: 100%;
-}
-.footer .box_2 .box_22{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-@media only screen and (max-width: 1000px) and (min-width: 710px){
-    nav{
-        height: 70px;
-    }
-    nav .brand_items{
-        width: 80%;
-    }
-    nav .brand_items .brand{
-        font-size: 24px;
-    }
-    nav .collapse{
-        display: none;
-        background-color: #2E008B;
-    }
-    nav .collapse ul li a{
-        margin-right: 0;
-        border-bottom: 4px solid white;
-    }
-    .navbar-toggler{
-        background-image: url(images/toggle.png);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        transform: scale(0.8);
-    }
-    .searchtab{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: flex;
-        justify-content: space-around;
-        border-bottom: 6px solid #5353E0;
-    }
-    .searchtab .searchbar{
-        display: flex;
-        align-items: center;
-    }
-    .searchtab .searchbar .input_area{
-        width: 35vw;
-        margin-right: 10px;
-    }
-    .searchtab .consultbtn{
-        padding: 6px 10px;
-        font-size: 18px;
-        letter-spacing: 0px;
-    }
-    .searchtab .estimate{
-        font-size: 20px;
-    }
-    .bottomborder{
-        padding-top: 130px;
-    }
-    .bottomborder .secondbottom{
-        background-color: #5353E0;
-        height: 8px;
-    }
-}
 
-@media only screen and (min-width: 470px) and (max-width: 709px ){
-    nav{
-        height: 70px;
-    }
-    nav .brand_items{
-        width: 80%;
-    }
-    nav .brand_items .brand{
-        font-size: 24px;
-    }
-    nav .collapse{
-        display: none;
-        background-color: #2E008B;
-    }
-    nav .collapse ul li a{
-        margin-right: 0;
-        border-bottom: 4px solid white;
-    }
-    .navbar-toggler{
-        background-image: url(images/toggle.png);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .searchtab{
-        padding-top: 5px;
-        padding-bottom: 5px;
-        display: flex;
-        justify-content: space-around;
-        z-index: 2;
-        border-bottom: 6px solid #5353E0;
-    }
-    .searchtab .searchbar{
-        display: flex;
-        align-items: center;
-    }
-    .searchtab .searchbar .input_area{
-        display: none;
-    }
-    .searchtab .consultbtn{
-        padding: 6px 10px;
-        font-size: 18px;
-        text-align: center;
-        letter-spacing: 0px;
-    }
-    .searchtab .estimate{
-        font-size: 22px;
-    }
-}
-@media only screen and (max-width: 470px){
-    nav{
-        height: 70px;
-    }
-    nav .brand_items{
-        width: 60%;
-    }
-    nav .brand_items .brand{
-        font-size: 18px;
-    }
-    nav .collapse{
-        display: none;
-        background-color: #2E008B;
-        padding: 0 5vw;
-        padding-bottom: 10px;
-    }
-    nav .collapse ul li a{
-        margin-right: 0;
-        border-bottom: 4px solid white;
-    }
-    .navbar-toggler{
-        background-image: url(images/toggle.png);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        transform: scale(0.8);
-    }   
-    .searchtab{
-        padding-top: 8px;
-        padding-bottom: 8px;
-        justify-content: space-around;
-        border-bottom: 4px solid #5353E0;
-    }
-    .searchtab .searchbar .input_area{
-        border-radius: 10px;
-        margin-right: 5px;
-        width: 0px;
-        display: none;
-    }
-    .searchtab .searchbar .searchbtn{
-        height: 40px;
-        width: 40px;
-        margin-right: 5px;
-    }
-    .searchtab .consult{
-        justify-content: center;
-    }
-    .searchtab .consultbtn{
-        padding: 5px 10px;
-        font-size: 12px;
-        font-weight: 500;
-        letter-spacing: 0px;
-        text-align: center;
-    }
-    .searchtab .estimate{
-        padding: 10px 0;
-        font-size: 14px;
-        font-weight: 500;
-        text-align: center;
-    }
-    .mobile_search .input_area{
-        height: 30px;
-    }
-    .mobile_search .searchbtn{
-        padding: 5px 10px;
-        font-size: 14px;
-    }
-}
 @media only screen and (max-width: 1000px) and (min-width: 550px){
     .main_heading{
         padding-top: 150px;
