@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
-import { Switch, Route, Redirect, Link } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import page1 from './landingpage'
 import page2 from './page2'
+import page3 from './page3'
+import page4 from './page4'
+import page5 from './page5'
+import page6 from './page6'
+import page7 from './page7'
+import page8 from './page8'
+import page9 from './page9'
+import page10 from './page10'
+import Signup from './signup';
 
 class Main extends Component {
 
@@ -16,22 +25,19 @@ class Main extends Component {
 
         return (
             <div>
-                <ul style={{display: "flex", justifyContent: "space-around"}}>
-                    <li><Link to="page1">Page1</Link></li>
-                    <li><Link to="page2">Page2</Link></li>
-                    <li><Link to="page3">Page3</Link></li>
-                    <li><Link to="page4">Page4</Link></li>
-                    <li><Link to="page5">Page5</Link></li>
-                    <li><Link to="page6">Page6</Link></li>
-                    <li><Link to="page7">Page7</Link></li>
-                    <li><Link to="page8">Page8</Link></li>
-                    <li><Link to="page9">Page9</Link></li>
-                    <li><Link to="page10">Page10</Link></li>
-                </ul>
                 <Switch>
                     <Route path="/page1" component={page1} />
                     <Route path="/page2" component={page2} />
-                    <Redirect to="/home" />
+                    <Route path="/page3" component={page3} />
+                    <Route path="/page4" component={page4} />
+                    <Route path="/page5" component={page5} />
+                    <Route path="/page6" component={page6} />
+                    <Route path="/page7" component={page7} />
+                    <Route path="/page8" component={page8} />
+                    <Route path="/page9" component={page9} />
+                    <Route path="/page10" component={page10} />
+                    <Route path="/signup" component={Signup} />
+                    <Redirect to="/page1" />
                 </Switch>
             </div>
         );

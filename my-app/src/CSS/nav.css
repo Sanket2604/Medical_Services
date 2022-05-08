@@ -16,10 +16,14 @@ a {
     text-decoration: none;
     color: black;
 }
+body{
+    overflow-x: hidden;
+}
+
 .nav_cont{
     position: fixed;
     width: 100%;
-    z-index: 5;
+    z-index: 4;
 }
 nav{
     display: flex;
@@ -30,7 +34,7 @@ nav{
     z-index: 5;
     box-shadow: 0px 0.5px 5px #000000;
     position: fixed;
-    height: 70px;
+    height: 60px;
 }
 nav .brand_items{
     width: 20%;
@@ -45,14 +49,14 @@ nav .brand_items .logo{
     background-size: cover;
     height: 20px;
     width: 20px;
-    transform: scale(5);
+    transform: scale(4.5);
     cursor: pointer;
 }
 nav .brand_items .brand{
-    margin-left: 40px;
+    margin-left: 30px;
     max-width: 100px;
     line-height: 20px;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
     color: white;
@@ -62,9 +66,9 @@ nav .collapse{
     justify-content: center;
     align-items: center;
     width: 80%;
-    font-size: 20px;
+    font-size: 18px;
 }
-nav .collapse ul li a{
+nav .collapse ul li span{
     color: white!important;
     cursor: pointer;
     margin-right: 60px;
@@ -96,14 +100,15 @@ nav .collapse ul li a{
     height: 35px;
 }
 .searchtab .searchbar .circle_1{
-    height: 45px;
-    width: 45px;
+    height: 38px;
+    width: 38px;
     border-radius: 50%;
     background-color: #3b00b3;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 5px black;
+    cursor: pointer;
 }
 .searchtab .searchbar .circle_2{
     height: 69%;
@@ -119,6 +124,7 @@ nav .collapse ul li a{
 .searchtab .searchbar .circle_1:hover{
     animation: zoom1 0.2s ease-in-out forwards;
 }
+
 @keyframes zoom1{
     from {
         transform: scale(1);
@@ -138,7 +144,32 @@ nav .collapse ul li a{
         transform: scale(1.1);
     }
 }
-
+form .form-group{
+    margin-bottom: 15px;
+}
+.modal_btn_group{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal_btn{
+    color: #3243CF;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 17px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    border: 2px solid #3243CF;
+}
+.modal_btn:hover{
+    color: #fff;
+    background-color: #3243CF;
+    cursor: pointer;
+}
+.searchtab{
+    padding-block: 5px;
+}
 .searchtab .consult{
     display: flex;
     align-items: center;
@@ -148,9 +179,7 @@ nav .collapse ul li a{
     padding: 6px 20px;
     color: white;
     font-size: 16px;
-    font-weight: 700;
     border-radius: 30px;
-    letter-spacing: 1px;
     transition: 0.5s ease-in-out;
 }
 .searchtab .consultbtn:hover{
@@ -162,7 +191,7 @@ nav .collapse ul li a{
 .searchtab .estimate{
     padding: 10px 20px;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 .mobile_search{

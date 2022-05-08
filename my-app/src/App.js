@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Main from './components/mainComponent'
 
 function App() {
+
   return (
     <BrowserRouter>
         <div>

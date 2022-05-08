@@ -1,6 +1,19 @@
 
+.footer .downdesign{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.footer .downdesign .top{
+    position: relative;
+    bottom: 0;
+}
+.footer .downdesign .bottom{
+    position: absolute;
+    bottom: 0;
+} 
 .footer{
-    background-color: blueviolet;
+    position: relative;
     margin-top: 240px;
 }
 .footer .box_1{
@@ -51,13 +64,13 @@
     .footer .box_1 .bigheading,
     .footer .box_2 .bigheading{
         font-size: 14px;
-        white-space: nowrap;
+        color: white;
         font-weight: 500;
     }
     .footer .box_1 .smallheading,
     .footer .box_2 .smallheading{
         font-size: 12px;
-        white-space: nowrap;
+        color: white;
     }
     .footer .box_2 .box_21{
         width: 100%;
@@ -68,7 +81,11 @@
         justify-content: space-between;
     }
 }
-
+@media only screen and (max-width: 1030px) and (min-width: 1000px){
+    .footer{
+        margin-top: 100px;
+    }
+}
 @media only screen and (max-width: 550px){
     
     .footer{

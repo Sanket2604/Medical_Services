@@ -1,43 +1,52 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../CSS/page1.css';
-// import updesign from '../assets/page1/updesign.svg';
-// import cont4updesign from './assets/page1/cont4updesign.svg';
-// import downdesign1 from './assets/page1/downdesign1.svg';
-// import downdesign2 from './assets/page1/downdesign2.svg';
-// import bottomtriangle from './assets/page1/bottomtriangle.svg';
-// import toptriangle from './assets/page1/toptriangle.svg';
+import { Link } from 'react-router-dom'
+import Footer from '../components/footer'
+import updesign from '../assets/page1/updesign.png';
+import downdesign1 from '../assets/page1/downdesign1.png';
+import downdesign2 from '../assets/page1/downdesign2.png';
+import righttriangle from '../assets/page1/rightarrow.png';
+import bottomtriangle from '../assets/page1/bottomtriangle.png';
+import toptriangle from '../assets/page1/toptriangle.png';
 
 function Cont1(){
     return(
-        <div class="container-fluid cont1">
-            <div class="row">
-                <div class="col-8 col-md-7 box1">
-                    <p class="mainheading">Your Medical <br/> Assistance in India.</p>
-                    <p class="smallheading">Discover High Quality and Affordable Treatment in India.</p>
-                    <div class="bluebtncnt"><span class="bluebtn">Get Quote</span></div>
+        <div className="container-fluid cont1">
+            <div className="toplogo">
+                <div className="box">
+                    <div className="logo"></div>
+                    <div className="brand">Medical<br />Services</div>
                 </div>
-                <div class="col-4 col-md-5 box2">
+                <div className="tagline">Connecting Worlds Healthcare</div>
+            </div>
+            <div className="row">
+                <div className="col-12 col-lg-7 box1">
+                    <p className="mainheading">Your Medical Assistance in India.</p>
+                    <p className="smallheading">Discover High Quality and Affordable Treatment in India.</p>
+                    <div className="bluebtncnt"><span className="bluebtn">Get Quote</span></div>
+                </div>
+                <div className="col-12 col-lg-5 box2">
                 </div>
             </div>
-            <div class="downarrow"></div>
+            <a href="#tab1" className="downarrow"></a>
         </div>
     );
 }
 
 function Nav(){
     return(
-        <div className="navigation">
+        <div className="navigation" id="tab1">
             <div className="brand_items">
                 <div className="logo"></div>
                 <div className="brand">Medical Services</div>
             </div>
             <div className="nav_items">
-                <a className="white home" href=""></a>
-                <a className="white hospital" href="">Hositpal</a> 
-                <a className="white doctor" href="">Doctor</a> 
-                <a className="white cost" href="">Cost</a> 
-                <a className="white consult" href="">Free Ceonsult</a>
-                <a className="white patient" href="">Patenit Stories</a>
+                <span className="white home" href=""></span>
+                <span className="white hospital" href="">Hositpal</span> 
+                <span className="white doctor" href="">Doctor</span> 
+                <span className="white cost" href="">Cost</span> 
+                <span className="white consult" href="">Free Ceonsult</span>
+                <span className="white patient" href="">Patient Stories</span>
             </div>
         </div>
     );
@@ -46,19 +55,31 @@ function Cont2(){
     return(
         <div className="cont2">
             <div className="updesign">
-                {/* <img src={updesign} width="100%" alt="" /> */}
+                <img src={updesign} width="100%" alt="" />
             </div>
             <div className="container-fluid box_2">
-                <div className="form">
-                    <input className="form-control treatment_input" type="text" placeholder="Treatment" />
-                    <input className="form-control location_input" type="text" placeholder="Location" />
-                    <div className="searchbutton"></div>
+                <div className="row">
+                    <div className="col-12 col-md-6">
+                        <div className="form">
+                            <input className="form-control treatment_input" type="text" placeholder="Treatment"/>
+                            <input className="form-control location_input" type="text" placeholder="Location"/>
+                            <div className="searchbutton"></div>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="estimate">
+                            <p>Get Instant Estimations</p>
+                        </div>
+                    </div>
                 </div>
-                <div className="estimate">
-                    <p>Get Instant Estimations</p>
+                <div className="row">
+                    <div className="col-6" style={{zIndex: "-1"}}>
+                        <div className="doctor_earphone"></div>
+                    </div>
+                    <div className="col-6" style={{zIndex: "-1"}}>
+                        <div className="doctor"></div>
+                    </div>
                 </div>
-                <div className="doctor"></div>
-                <div className="doctor_earphone"></div>
             </div>
         </div>
     );
@@ -67,13 +88,13 @@ function Cont3(){
     return(
         <div className="cont3 container-fluid">
             <div className="row">
-                <div className="col-12 col-md-6 box_1">
-                    <p className="bigheading">Help Us With<br />The Patient Details</p>
-                    <p className="smallheading">We'll Help You Discover High Quality and<br/>Affordable Treatments in India.</p>
+                <div className="col-12 col-lg-6 box_1">
+                    <p className="bigheading">Help Us With The Patient Details</p>
+                    <p className="smallheading">We'll Help You Discover High Quality and Affordable Treatments in India.</p>
                 </div>
-                <div className="col-12 col-md-6 box_2">
+                <div className="col-12 col-lg-6 box_2">
                     <div className="form">
-                        <label for="Name" style={{marginTop: 0 + 'px'}}>Patient Name</label>
+                        <label for="Name" style={{marginTop: "0"}}>Patient Name</label>
                         <input className="form-control input_area" type="text" placeholder="Patient Name"/>
                         <label for="Email">Email</label>
                         <input className="form-control input_area" type="text" placeholder="Email"/>
@@ -83,8 +104,6 @@ function Cont3(){
                         <input className="form-control input_area" type="text" placeholder="City"/>
                         <label for="Phone Number">Phone Number</label>
                         <input className="form-control input_area" type="text" placeholder="Phone Number"/>
-                        <div className="leftarrow"></div>
-                        <div className="rightarrow"></div>
                     </div>
                     <div className="submitbtn">Submit</div>
                 </div>
@@ -96,12 +115,9 @@ function Cont3(){
 function Cont4(){
     return(
         <div className="cont4">
-            <div className="updesign">
-                {/* <img src={cont4updesign} width="100%" alt="" /> */}
-            </div>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-12 col-md-6 d-flex justify-content-center">
+                    <div className="col-12 col-lg-6 d-flex justify-content-center">
                         <div className="grid">
                             <div className="box">
                                 <div className="img img1"></div>
@@ -129,9 +145,9 @@ function Cont4(){
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-lg-6">
                         <div className="content">
-                            <p className="bigheading">2500+ surgeons<br/>and specialists on<br/>one platform.</p>
+                            <p className="bigheading">2500+ surgeons and specialists on one platform.</p>
                             <p className="smallheading">From 100+ Hospitals In India.</p>
                             <div className="view">
                                 <div className="img"></div>
@@ -155,28 +171,62 @@ function Cont5(){
                 <p className="smallheading">Transparent - Professional - Without Hassles</p>
             </div>
             <div className="row2">
-                <div className="grid">
+                <div className="line des"></div>
+                <div className="grid des">
                     <div className="block">
                         <div className="circle">
                             <div className="img img1"></div>
                         </div>
                         <div className="content">Send Details</div>
+                        <img className="rt" src={righttriangle} width="100%" alt=""/>
                     </div>
                     <div className="block">
                         <div className="circle">
                             <div className="img img2"></div>
                         </div>
                         <div className="content">Get Invitation</div>
+                        <img className="rt des" src={righttriangle} width="100%" alt=""/>
                     </div>
                     <div className="block">
                         <div className="circle">
                             <div className="img img3"></div>
                         </div>
                         <div className="content">Fly</div>
+                        <img className="rt" src={righttriangle} width="100%" alt=""/>
                     </div>
                     <div className="block">
                         <div className="circle">
                             <div className="img img4"></div>
+                        </div>
+                        <div className="content">Get Treated</div>
+                    </div>
+                </div>
+                <div className="grid mob">
+                    <div className="block">
+                        <div className="circle">
+                            <div className="img img1"></div>
+                            <img className="mrt" src={righttriangle} width="100%" alt=""/>
+                        </div>
+                        <div className="content">Send Details</div>
+                    </div>
+                    <div className="block">
+                        <div className="circle">
+                            <div className="img img2"></div>
+                            <img className="mrt" src={righttriangle} width="100%" alt=""/>
+                        </div>
+                        <div className="content">Get Invitation</div>
+                    </div>
+                    <div className="block">
+                        <div className="circle">
+                            <div className="img img3"></div>
+                            <img className="mrt" src={righttriangle} width="100%" alt=""/>
+                        </div>
+                        <div className="content">Fly</div>
+                    </div>
+                    <div className="block">
+                        <div className="circle">
+                            <div className="img img4"></div>
+                            <div className="line"></div>
                         </div>
                         <div className="content">Get Treated</div>
                     </div>
@@ -187,17 +237,33 @@ function Cont5(){
 }
 function Cont6(){
     return(
-
         <div className="cont6">
             <p><span className="smallheading">Just Let Us Know,</span><br/>We Will Be Happy To Assist You</p>
             <a className="getintouchbtn" href="">Get In touch</a>
         </div>
     );
 }
-function page1(props){
+function Page1(props){
+
+    useEffect(()=>{
+        document.title = `Medical Services`
+        window.scrollTo(0, 0)
+    },[])
 
     return(
-        <div>
+        <div className="page1">
+            <ul style={{display: "flex", justifyContent: "space-around", position: "fixed", width:"100%", background: "white", zIndex: "5", backgroundColor: "#000492"}}>
+                <Link to="page1" style={{color: "white", listStyle: "none", textDecoration: "none"}}><li>Page1</li></Link>
+                <Link to="page2" style={{color: "white", listStyle: "none", textDecoration: "none"}}><li>Page2</li></Link>
+                <Link to="page3" style={{color: "white", listStyle: "none", textDecoration: "none"}}><li>Page3</li></Link>
+                <Link to="page4" style={{color: "white", listStyle: "none", textDecoration: "none"}}><li>Page4</li></Link>
+                <Link to="page5" style={{color: "white", listStyle: "none", textDecoration: "none"}}><li>Page5</li></Link>
+                <Link to="page6" style={{color: "white", listStyle: "none", textDecoration: "none"}}><li>Page6</li></Link>
+                <Link to="page7" style={{color: "white", listStyle: "none", textDecoration: "none"}}><li>Page7</li></Link>
+                <Link to="page8" style={{color: "white", listStyle: "none", textDecoration: "none"}}><li>Page8</li></Link>
+                <Link to="page9" style={{color: "white", listStyle: "none", textDecoration: "none"}}><li>Page9</li></Link>
+                <Link to="page10" style={{color: "white", listStyle: "none", textDecoration: "none"}}><li>Page10</li></Link>
+            </ul>
             <Cont1 />
             <Nav />
             <Cont2 />
@@ -206,29 +272,31 @@ function page1(props){
                 <div className="secondbottom"></div>
             </div>
             <Cont3 />
-            <div className="downdesign">
-                {/* <img className="bottom" src={downdesign1.svg} width="100%" alt=""/> */}
-                {/* <img className="top" src={downdesign2.svg} width="100%" alt=""/> */}
+            <div className="downdesign up">
+                <img className="bottom" src={downdesign1} width="100%" alt=""/>
+                <img className="top" src={downdesign2} width="100%" alt=""/>
             </div>
             <Cont4 />
+            <div className="downdesign down">
+                <img className="bottom" src={downdesign1} width="100%" alt=""/>
+                <img className="top" src={downdesign2} width="100%" alt=""/>
+            </div>
             <Cont5 />
             
             <div className="downdesigntriangle">
-                {/* <img className="bottom" src={bottomtriangle.svg} width="100%" alt=""/> */}
-                {/* <img className="top" src={toptriangle.svg} width="100%" alt=""/> */}
+                <div className="content">Working Procedures</div>
+                <img className="bottom" src={bottomtriangle} width="100%" alt=""/>
+                <img className="top" src={toptriangle} width="100%" alt=""/>
             </div>
             <div className="bottomborder2">
                 <div className="secondbottom"></div>
                 <div className="firstbottom"></div>
             </div>
             <Cont6 />
-            <div className="downdesign2">
-                {/* <img className="bottom" src={downdesign1.svg} width="100%" alt=""/> */}
-                {/* <img className="top" src={downdesign2.svg} width="100%" alt=""/> */}
-            </div>
+            <Footer />
         </div>
     );
 
 }
 
-export default page1;
+export default Page1;

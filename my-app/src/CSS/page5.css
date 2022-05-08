@@ -1,0 +1,260 @@
+.page5 .main_heading{
+    text-align: center;
+    color: #2E008B;
+    font-size: 32px;
+    padding-top: 180px;
+}
+.page5 .recordcounter{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 30px;
+    padding-right: 5vw;
+}
+.page5 .recordcounter .counter{
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #E8F1FF;
+    color: #707070;
+    font-size: 18px;
+}
+.page5 .recordcounter .record{
+    padding: 5px 5px;
+    color: #707070;
+    font-size: 18px;
+}
+.page5 .cont1{
+    margin-top: 20px;
+}
+.page5 .cont1 .dropdown{
+    display: flex;
+    justify-content: flex-end;
+}
+.page5 .cont1 .dropdown .dropdownbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 5vw;
+}
+.page5 .cont1 .dropdown .dropdownbox .btn-group .dropdown-toggle{
+    width: 250px;
+    color: #000B56;
+    background-color: rgba(223, 223, 223, 0.534);
+    border-bottom: 2px solid #5353E0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+.page5 .cont1 .dropdown .dropdownbox .btn-group .dropdown-toggle:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px rgba(49, 49, 49, 0.5);
+}
+.page5 .result_field{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(202, 202, 202, 0.25);
+    margin-bottom: 40px;
+}
+.page5 .card_{
+    width: 80%;
+    background-color: #DCEBFF;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.page5 .card_ .image_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.page5 .card_ .image_section .img{
+    height: 175px;
+    width: 175px;
+    background-color: black;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 10px rgba(31, 31, 31, 0.7);
+    border-radius: 10px;
+}
+.page5 .card_ .image_section .text{
+    color: #2A0080;
+    font-size: 24px;
+}
+.page5 .card_ .image_section .smalltext{
+    font-size: 14px;
+    color: #2A0080;
+}
+.page5 .card_ .details{
+    padding-top: 20px;
+    font-size: 14px;
+    text-align: justify;  
+    color: #000880;  
+}
+.page5 .card_ .details .heading{
+    font-size: 18px;
+    font-weight: 700;
+}
+.page5 .card_ .details .smallheading{
+    font-weight: 600;
+}
+.page5 .card_ .btns{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.page5 .card_ .btns .read{
+    color: #000B56;
+    font-size: 24px;
+    margin-left: 20px;
+}
+.page5 .card_ .btns .enqbtn{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 7.5px 15px;
+    background-color: #3243CF;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.page5 .card_ .btns .enqbtn:hover{
+    color: #3243CF;
+    background-color: white;
+}
+.page5 .pgcounter{
+    display: flex;
+    margin: 10px;
+    font-size: 18px;
+}
+.page5 .pgcounter .pg_no{
+    margin-right: 10px;
+    padding: 5px 15px;
+    color: white;
+    background-color: #000B56;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+.page5 .pgcounter .pg_no:hover{
+    background-color: #a4b2ff46;
+    color: #000B56;
+    cursor: pointer;
+}
+.page5 .pgcounter .next_pg{
+    padding: 5px 10px;
+    color: #000B56;
+    background-color: white;
+    border: 1px solid #000B56;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+.page5 .pgcounter .next_pg:hover{
+    font-weight: 600;
+    color: white;
+    background-color: #000B56;
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 550px){
+    
+    .page5 .cont1{
+        margin-top: 40px;
+        padding-right: 0vw;
+    }
+    .page5 .cont1 .dropdown{
+        display: flex;
+        justify-content: center;
+    }
+    .page5 .cont1 .dropdown .dropdownbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .page5 .card_{
+        width: 90%;
+    }
+    .page5 .card_ .image_section{
+        height: auto;
+        margin-bottom: 50px;
+        padding-top: 30px;
+    }
+    .page5 .card_ .image_section .text{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 550px){
+    
+    .page5 .main_heading{
+        font-size: 20px;
+    }
+    .page5 .recordcounter .counter{
+        font-size: 16px;
+    }
+    .page5 .recordcounter .record{
+        font-size: 14px;
+    }
+    .page5 .cont1{
+        margin-top: 20px;
+    }
+    .page5 .cont1 .dropdown{
+        display: flex;
+        justify-content: center;
+    }
+    .page5 .cont1 .dropdown .dropdownbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .page5 .result_field{
+        padding: 0;
+    }
+    .page5 .card_{
+        width: 100%;
+        border-radius: 0;
+    }
+    .page5 .card_ .image_section{
+        height: auto;
+        margin-bottom: 0px;
+        padding-top: 30px;
+    }
+    .page5 .card_ .image_section .img{
+        height: 150px;
+        width: 150px;
+    }
+    .page5 .card_ .image_section .text{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .page5 .card_ .image_section .smalltext{
+        font-size: 14px;
+        color: #2A0080;
+    }
+    .page5 .card_ .details{
+        padding-top: 20px;
+        font-size: 16px;
+    }
+    .page5 .card_ .details .smallheading{
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .page5 .card_ .btns .read{
+        color: #000B56;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    .page5 .card_ .btns .enqbtn{
+        font-size: 16px;
+    }
+    .page5 .pgcounter{
+        font-size: 16px;
+    }
+}
